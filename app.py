@@ -177,7 +177,7 @@ def processRequest(req):
 
 
 
-        log.saveConversations(sessionID, "Indian State Cases", webhookresponse1, intent, db)
+        #log.saveConversations(sessionID, "Indian State Cases", webhookresponse1, intent, db)
         return {
 
             "fulfillmentMessages": [
@@ -236,7 +236,8 @@ def processRequest(req):
 
                     }
                 }
-        }
+            ]
+        }   
     else:
         return {
             "fulfillmentText": "something went wrong,Lets start from the begning, Say Hi"
