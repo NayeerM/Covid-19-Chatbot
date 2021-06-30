@@ -217,10 +217,29 @@ def processRequest(req):
             ]
         }
 
+    elif intent=="help_desk":
+        return{
+            "fulfillmentMessages": [
+                {
+                    "text": {
+                        "text": [
+                            "Hey Macarena"
+                        ]
 
+                    }
+                },
+                {
+                    "text": {
+                        "text": [
+                            "Hey Macarena 2"
+                        ]
+
+                    }
+                }
+        }
     else:
         return {
-            "fulfillmentText": "something went wrong,Lets start from the begning, Say Hi",
+            "fulfillmentText": "something went wrong,Lets start from the begning, Say Hi"
         }
 
 
