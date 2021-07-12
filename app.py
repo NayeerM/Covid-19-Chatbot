@@ -67,16 +67,8 @@ def processRequest(req):
                         ]
 
                     }
-                },
-                {
-                    "text": {
-                        "text": [
-                            "Do you want me to send the detailed report to your e-mail address? Type.. \n 1. Sure \n 2. Not now "
-                            # "We have sent the detailed report of {} Covid-19 to your given mail address.Do you have any other Query?".format(cust_country)
-                        ]
-
-                    }
                 }
+                
             ]
         }
     elif intent == "Welcome" or intent == "continue_conversation" or intent == "not_send_email" or intent == "endConversation" or intent == "Fallback" or intent == "covid_faq" or intent == "select_country_option":
@@ -115,15 +107,7 @@ def processRequest(req):
 
                     }
                 },
-                {
-                    "text": {
-                        "text": [
-                            "Do you want me to send the detailed report to your e-mail address? Type.. \n 1. Sure \n 2. Not now "
-                            # "We have sent the detailed report of {} Covid-19 to your given mail address.Do you have any other Query?".format(cust_country)
-                        ]
-
-                    }
-                }
+                
             ]
         }
 
@@ -204,43 +188,12 @@ def processRequest(req):
                         ]
 
                     }
-                },
-                {
-                    "text": {
-                        "text": [
-                            "Do you want me to send the detailed report to your e-mail address? Type.. \n 1. Sure \n 2. Not now "
-                            # "We have sent the detailed report of {} Covid-19 to your given mail address.Do you have any other Query?".format(cust_country)
-                        ]
-
-                    }
                 }
             ]
-        }
-
-    elif intent=="help_desk":
-        return{
-            "fulfillmentMessages": [
-                {
-                    "text": {
-                        "text": [
-                            "Hey Macarena"
-                        ]
-
-                    }
-                },
-                {
-                    "text": {
-                        "text": [
-                            "Hey Macarena 2"
-                        ]
-
-                    }
-                }
-            ]
-        }   
+        } 
     else:
         return {
-            "fulfillmentText": "something went wrong,Lets start from the begning, Say Hi"
+            "fulfillmentText": "I'm sorry. Something went wrong. Let's start over, say hi!"
         }
 
 
