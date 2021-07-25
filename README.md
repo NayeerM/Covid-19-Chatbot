@@ -1,46 +1,19 @@
-# As requested by many people over mail or linkedin.I am making stepwise Implementation playist on youtube. 
 
-Here is the link of stepwise implementation Youtube- https://bit.ly/3c0n0ss
+# End-to-End Covid-19 chatbot using DialogFlow,Python/Flask,MongoDb Atlas and deployed on Heroku
+This chatbot developed using Dialoglow,python,flask,MongoDB and deployed on Telegram. 
 
-# End-to-End Covid-19 chatbot using DialogFlow,Python/Flask,MongoDb Atlas and deployed on Pivotal Cloud foundary and Telegram
-This chatbot developed using Dialoglow,python,flask,MongoDB and deployed on Telegram. search @bestcovid19_bot on telegram app
-BestCovid-19 Bot can give answers of all of your queries related to covid-19 also it can -
+Covid-19 Chatbot is a chatbot meant to allow users to coverse with the bot instead of navigating through different menus . User requires only to ask a question to find the answer.
 
-🌟🌟🌟 DialogFlow Agents,entities,Intents backup has been added you just need to do import as zip on your Agent Setting.
+See implementation of chatbot here:http://t.me/Test1_test2BBot
 
+#Features:
 
-I have also mentioned how to test it locally on PostMan.
+1) Displays covid-19 statistics for countries, worldwide, and local states for India
 
+2) Answer Frequently Asked Questions (FAQs)
 
-1). Show you statisics based on Country,Indian States,Indian districts,Google Maps,WorldWide
+3) Display help desk information 
 
+4) Govt annoucements , videos and Images.
 
-2). can send Email to user email Address.
-
-
-3). Can show Live news
-
-
-4). Govt annoucements , videos and Images.
-
-If you like my work kindly hit 🌟🌟🌟
-
-
-How to Setup the whole system ? 
-1. Setup Pivotal Cloud foundary account and install foundary CLI to your system
-
-
-2. Setup MongoDB Atlas account
-
-
-3. Setup Dialogflow Account
-
-
-4. Download and Install Pycharm or any IDE to open my code.
-
-
-5. use PostMan to test this code locally. localhost:5000/webhook , give header and body as Raw json. (Everything mentioned inside document.)
-
-
-feel free to contact me in case of any problem reachout to me @ 'dineshraturi22@gmail.com' and Add subject-BestCovid Github Query
 
