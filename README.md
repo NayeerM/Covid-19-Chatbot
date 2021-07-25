@@ -6,7 +6,7 @@ Covid-19 Chatbot is a chatbot meant to allow users to coverse with the bot inste
 
 See implementation of chatbot here:http://t.me/Test1_test2BBot
 
-#Features:
+Features:
 
 1) Displays covid-19 statistics for countries, worldwide, and local states for India
 
