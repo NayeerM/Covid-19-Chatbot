@@ -45,7 +45,7 @@ def processRequest(req):
             cust_country = "USA"
 
         fulfillmentText, deaths_data, testsdone_data = makeAPIRequest(cust_country)
-        webhookresponse = "***Covid Report*** \n\n" + " New cases :" + str(fulfillmentText.get('new')) + \
+        webhookresponse = "***Covid Report: "+cust_country+" *** \n\n" + " New cases :" + str(fulfillmentText.get('new')) + \
                           "\n" + " Active cases : " + str(
             fulfillmentText.get('active')) + "\n" + " Critical cases : " + str(fulfillmentText.get('critical')) + \
                           "\n" + " Recovered cases : " + str(
@@ -83,7 +83,7 @@ def processRequest(req):
     elif intent == "totalnumber_cases":
         fulfillmentText = makeAPIRequest("world")
 
-        webhookresponse = "***World wide Report*** \n\n" + " Confirmed cases :" + str(
+        webhookresponse = "***World wide Covid-19 Report*** \n\n" + " Confirmed cases :" + str(
             fulfillmentText.get('confirmed')) + \
                           "\n" + " Deaths cases : " + str(
             fulfillmentText.get('deaths')) + "\n" + " Recovered cases : " + str(fulfillmentText.get('recovered')) + \
