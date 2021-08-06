@@ -45,14 +45,14 @@ def processRequest(req):
             cust_country = "USA"
 
         fulfillmentText, deaths_data, testsdone_data = makeAPIRequest(cust_country)
-        webhookresponse = "***Covid Report: "+cust_country+" *** \n\n" + " New cases :" + str(fulfillmentText.get('new')) + \
+        webhookresponse = "Covid Report: "+cust_country+"  \n\n" + " New cases :" + str(fulfillmentText.get('new')) + \
                           "\n" + " Active cases : " + str(
             fulfillmentText.get('active')) + "\n" + " Critical cases : " + str(fulfillmentText.get('critical')) + \
                           "\n" + " Recovered cases : " + str(
             fulfillmentText.get('recovered')) + "\n" + " Total cases : " + str(fulfillmentText.get('total')) + \
                           "\n" + " Total Deaths : " + str(deaths_data.get('total')) + "\n" + " New Deaths : " + str(
             deaths_data.get('new')) + \
-                          "\n" + " Total Test Done : " + str(deaths_data.get('total')) + "\n\n*******END********* \n "
+                          "\n" + " Total Test Done : " + str(deaths_data.get('total')) + "\n\n\n "
         print(webhookresponse)
         #log.saveConversations(sessionID, cust_country, webhookresponse, intent, db)
         #log.saveCases( "country", fulfillmentText, db)
@@ -83,7 +83,7 @@ def processRequest(req):
     elif intent == "totalnumber_cases":
         fulfillmentText = makeAPIRequest("world")
 
-        webhookresponse = "***World wide Covid-19 Report*** \n\n" + " Confirmed cases :" + str(
+        webhookresponse = "World wide Covid-19 Report \n\n" + " Confirmed cases :" + str(
             fulfillmentText.get('confirmed')) + \
                           "\n" + " Deaths cases : " + str(
             fulfillmentText.get('deaths')) + "\n" + " Recovered cases : " + str(fulfillmentText.get('recovered')) + \
@@ -91,7 +91,7 @@ def processRequest(req):
             fulfillmentText.get('active')) + "\n" + " Fatality Rate : " + str(
             fulfillmentText.get('fatality_rate') * 100) + "%" + \
                           "\n" + " Last updated : " + str(
-            fulfillmentText.get('last_update')) + "\n\n*******END********* \n "
+            fulfillmentText.get('last_update')) + "\n\n\n "
         print(webhookresponse)
         #log.saveConversations(sessionID, "Cases worldwide", webhookresponse, intent, db)
         #log.saveCases("world", fulfillmentText, db)
